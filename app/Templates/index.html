@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="PT-BR">
    <head>
@@ -14,20 +15,21 @@
       <meta name="description" content="">
       <meta name="author" content="">
       <!-- bootstrap css -->
-      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
       <!-- style css -->
-      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
       <!-- Responsive-->
-      <link rel="stylesheet" href="css/responsive.css">
+      <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
       <!-- fevicon -->
-      <link rel="icon" href="static/img/fevicon.png" type="image/gif" />
+      <link rel="icon" href="{% static '/img/fevicon.png' %}" type="image/gif" />
       <!-- Scrollbar Custom CSS -->
-      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <link rel="stylesheet" href="{% static 'css/jquery.mCustomScrollbar.min.css' %}">
       <!-- Tweaks for older IEs-->
       <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
       <!-- owl stylesheets --> 
-      <link rel="stylesheet" href="css/owl.carousel.min.css">
-      <link rel="stylesheet" href="css/owl.theme.default.min.css">
+      <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+      <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
    </head>
    <body>
@@ -35,7 +37,7 @@
       <div class="header_section">
          <div class="container-fluid">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-               <div class="logo"><a href="index.html"><img src="static/img/019plate1_113745.png"></a></div>
+               <div class="logo"><a href="index.html"><img src="{% static '/img/019plate1_113745.png' %}"></a></div>
                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"aria-expanded="false" aria-label="Toggle navigation">
                <span class="navbar-toggler-icon"></span>
                </button>
@@ -131,7 +133,7 @@
                   </div>
                </div>
                <div class="col-md-6">
-                  <div class="about_img"><img src="static/img/culinaria-italiana-1170x762.jpg"></div>
+                  <div class="about_img"><img src="{% static 'img/culinaria-italiana-1170x762.jpg' %}"></div>
                </div>
             </div>
          </div>
@@ -151,7 +153,7 @@
                   <div class="row">
                      <div class="col-md-4">
                         <div class="container_main">
-                           <img src="static/img/comida1.jpg" alt="Avatar" class="image">
+                           <img src="{% static '/img/comida1.jpg' %}" alt="Avatar" class="image">
                            <div class="overlay">
                               <div class="text"><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></div>
                            </div>
@@ -159,7 +161,7 @@
                      </div>
                      <div class="col-md-4">
                         <div class="container_main">
-                           <img src="static/img/comida2.jpg" alt="Avatar" class="image">
+                           <img src="{% static '/img/comida2.jpg' %}" alt="Avatar" class="image">
                            <div class="overlay">
                               <div class="text"><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></div>
                            </div>
@@ -167,7 +169,7 @@
                      </div>
                      <div class="col-md-4">
                         <div class="container_main">
-                           <img src="static/img/comida3.jpg" alt="Avatar" class="image">
+                           <img src="{% static '/img/comida3.jpg' %}" alt="Avatar" class="image">
                            <div class="overlay">
                               <div class="text"><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></div>
                            </div>
@@ -179,7 +181,7 @@
                   <div class="row">
                      <div class="col-md-4">
                         <div class="container_main">
-                           <img src="static/img/comida4.jpg" alt="Avatar" class="image">
+                           <img src="{% static '/img/comida4.jpg' %}" alt="Avatar" class="image">
                            <div class="overlay">
                               <div class="text"><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></div>
                            </div>
@@ -187,7 +189,7 @@
                      </div>
                      <div class="col-md-4">
                         <div class="container_main">
-                           <img src="static/img/comida6.jpg" alt="Avatar" class="image">
+                           <img src="{% static '/img/comida6.jpg' %}" alt="Avatar" class="image">
                            <div class="overlay">
                               <div class="overlay">
                                  <div class="text"><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></div>
@@ -197,7 +199,7 @@
                      </div>
                      <div class="col-md-4">
                         <div class="container_main">
-                           <img src="static/img/comida7.jpg" alt="Avatar" class="image">
+                           <img src="{% static '/img/comida7.jpg' %}" alt="Avatar" class="image">
                            <div class="overlay">
                               <div class="overlay">
                                  <div class="text"><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></div>
@@ -211,7 +213,7 @@
                   <div class="row">
                      <div class="col-md-4">
                         <div class="container_main">
-                           <img src="static/img/comida5.jpeg" alt="Avatar" class="image">
+                           <img src="{% static '/img/comida5.jpeg' %}" alt="Avatar" class="image">
                            <div class="overlay">
                               <div class="text"><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></div>
                            </div>
@@ -219,7 +221,7 @@
                      </div>
                      <div class="col-md-4">
                         <div class="container_main">
-                           <img src="static/img/comida8.jpeg" alt="Avatar" class="image">
+                           <img src="{% static '/img/comida8.jpeg' %}" alt="Avatar" class="image">
                            <div class="overlay">
                               <div class="text"><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></div>
                            </div>
@@ -227,7 +229,7 @@
                      </div>
                      <div class="col-md-4">
                         <div class="container_main">
-                           <img src="static/img/comida9.gif" alt="Avatar" class="image">
+                           <img src="{% static '/img/comida9.gif' %}" alt="Avatar" class="image">
                            <div class="overlay">
                               <div class="text"><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></div>
                            </div>
@@ -254,8 +256,8 @@
                   <div class="col-lg-4 col-sm-12 col-md-4">
                      <div class="box_main active">
                         <div class="house_icon">
-                           <img src="static/img/3480823.png" class="image_1">
-                           <img src="static/img/3480823.png" class="image_2">
+                           <img src="{% static '/img/3480823.png' %}" class="image_1">
+                           <img src="{% static '/img/3480823.png' %}" class="image_2">
                         </div>
                         <h3 class="decorate_text">até 4 Pessoas</h3>
                         <p class="tation_text"> Venha Com até 4 Pessoas e Aproveite As Áreas Reservadas </p>
@@ -265,8 +267,8 @@
                   <div class="col-lg-4 col-sm-12 col-md-4">
                      <div class="box_main">
                         <div class="house_icon">
-                           <img src="static/img/1699819.png" class="image_1">
-                           <img src="static/img/1699819.png" class="image_2">
+                           <img src="{% static '/img/1699819.png' %}" class="image_1">
+                           <img src="{% static '/img/1699819.png' %}" class="image_2">
                         </div>
                         <h3 class="decorate_text">Até 8 Pessoas</h3>
                         <p class="tation_text">Aproveite Nosso Grande Espaço e Pratos Variados Para até mesmo 8 pessoas </p>
@@ -276,8 +278,8 @@
                   <div class="col-lg-4 col-sm-12 col-md-4">
                      <div class="box_main">
                         <div class="house_icon">
-                           <img src="static/img/5286626.png" class="image_1">
-                           <img src="static/img/5286626.png" class="image_2">
+                           <img src="{% static '/img/5286626.png' %}" class="image_1">
+                           <img src="{% static '/img/5286626.png' %}" class="image_2">
                         </div>
                         <h3 class="decorate_text">Eventos</h3>
                         <p class="tation_text">Reserve Nosso Espaço Para Eventos </p>
@@ -312,7 +314,7 @@
                    <div class="row">
                       <div class="col-md-12">
                          <div class="testimonial_section_2">
-                            <h4   class="client_name_text">Monica <span class="quick_icon"><img src="static/img/quick-icon.png"></span></h4>
+                            <h4   class="client_name_text">Monica <span class="quick_icon"><img src="{% static '/img/quick-icon.png' %}"></span></h4>
                             <p  style="color: white;" class="customer_text">Jantei recentemente no bom paladar e fiquei muito bem impressionado com a cozinha requintada e o serviço impecável. O menu apresentava uma variedade de pratos inovadores, misturando sabores arrojados e uma bela apresentação. O pessoal atento e conhecedor assegurou que a nossa refeição fosse memorável, fornecendo excelentes recomendações e garantindo a nossa satisfação. Não posso recomendar o bom paladar o suficiente para uma experiência gastronómica fantástica.</p>
                          </div>
                       </div>
@@ -326,7 +328,7 @@
                    <div class="row">
                       <div class="col-md-12">
                          <div class="testimonial_section_2">
-                            <h4 class="client_name_text">Pedro<span class="quick_icon"><img src="static/img/quick-icon.png"></span></h4>
+                            <h4 class="client_name_text">Pedro<span class="quick_icon"><img src="{% static '/img/quick-icon.png' %}"></span></h4>
                             <p  style="color: white;"   class="customer_text">adorei, os pratos são muito bons, os garções  são bem atenciosos e o atendimento é rapido</p>
                          </div>
                       </div>
@@ -340,7 +342,7 @@
                    <div class="row">
                       <div class="col-md-12">
                          <div class="testimonial_section_2">
-                            <h4 class="client_name_text">Julia <span class="quick_icon"><img src="static/img/quick-icon.png"></span></h4>
+                            <h4 class="client_name_text">Julia <span class="quick_icon"><img src="{% static '/img/quick-icon.png' %}"></span></h4>
                             <p  style="color: white;"    class="customer_text">qualidade impecável, tanto dos alimentos quanto do atendimento</p>
                          </div>
                       </div>
@@ -449,13 +451,13 @@
       </div>
       <!-- copyright section end -->
       <!-- Javascript files-->
-      <script src="js/jquery.min.js"></script>
-      <script src="js/popper.min.js"></script>
-      <script src="js/bootstrap.bundle.min.js"></script>
-      <script src="js/jquery-3.0.0.min.js"></script>
-      <script src="js/plugin.js"></script>
+      <script src="{% static 'js/jquery.min.js' %}"></script>
+      <script src="{% static 'js/popper.min.js' %}"></script>
+      <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+      <script src="{% static 'js/jquery-3.0.0.min.js' %}"></script>
+      <script src="{% static 'js/plugin.js' %}"></script>
       <!-- sidebar -->
-      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-      <script src="js/custom.js"></script>     
+      <script src="{% static 'js/jquery.mCustomScrollbar.concat.min.js' %}"></script>
+      <script src="{% static 'js/custom.js' %}"></script>     
    </body>
 </html>
